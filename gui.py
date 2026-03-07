@@ -1,13 +1,13 @@
 import funtions
-import FreeSimpleGUI
+import FreeSimpleGUI as sg
 
 
-label = FreeSimpleGUI.Text("Type a member name")
+label = sg.Text("Type a member name")
 
-input_box = FreeSimpleGUI.InputText(tooltip="Enter member")
+input_box = sg.InputText(tooltip="Enter member")
 
-button = FreeSimpleGUI.Button("Add")
+button = sg.Button("Add")
 
-window = FreeSimpleGUI.Window("My Members App", layout=[[label], [input_box, button]])
+window = sg.Window("My Members App", layout=[[label], [input_box, button]])
 window.read()
 window.close()
