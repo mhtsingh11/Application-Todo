@@ -13,7 +13,7 @@ while True:
 
         #Read the members.txt file and add the content which is
         #already there into content list so it can be written later
-        content.append(funtions.read_members_file())
+        content = funtions.read_lines_members_file()
 
         #Open members.txt and write the existing and new content to the file
         content.append(writeMe + "\n")
